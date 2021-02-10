@@ -1,18 +1,18 @@
 const Modal = {
-    open(){
+    open(){ // Função para abrir o modal
         document.querySelector('.modal-overlay').classList.add('active')
     },
-    close(){
+    close(){ // Função para fechar o modal
         document.querySelector('.modal-overlay').classList.remove('active')
         Form.clearFields()
     }
 }
 
-const Storage = {
+const Storage = { // Iniciando o LocalStorage
     get() {
         return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
     },
-    set(transactions) {
+    set(transactions) { 
         localStorage.setItem("dev.finances:transactions", JSON.stringify(transactions))
     }
 }
