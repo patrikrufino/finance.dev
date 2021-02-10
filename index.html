@@ -71,12 +71,15 @@
 
     </main>
 
+<!--Modal para adicionar novas transações-->
     <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content"></div>
             <div id="form">
+                <!--Formulário do modal.>-->
                 <h2>Nova Transação</h2>
                 <form action="" onsubmit="Form.submit(event)">
+                    <!--Label para colocar uma descrição da transação-->
                     <div class="input-group">
                         <label 
                             class="sr-only"  
@@ -89,11 +92,11 @@
                             placeholder="Descrição"
                         />
                     </div>
-
+                    <!--Label para adicionar o valor da transação-->
                     <div class="input-group">
                         <label 
                             class="sr-only"  
-                            for="amount">Descrição
+                            for="amount">
                         </label>
                         <input 
                             type="number"
